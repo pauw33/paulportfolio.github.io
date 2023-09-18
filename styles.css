@@ -152,7 +152,6 @@ header.sticky .nav-bar{
     }
 }
 
-/* Additional styles for screen sizes larger than 992px (default styles) */
 @media (min-width: 993px) {
     .hamburger {
         display: none; /* Hide the hamburger icon for larger screens */
@@ -162,7 +161,7 @@ header.sticky .nav-bar{
         box-shadow: none;
     }
 
-    /* ... (rest of the default styles for larger screens) ... */
+   
 }
 
 
@@ -172,7 +171,7 @@ header.sticky .nav-bar{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 700px;
     font-family: 'Raleway';
     margin-right: auto;
     margin-left: auto;
@@ -501,6 +500,24 @@ header.sticky .nav-bar{
     color: var(--text);
 }
 
+.component{
+    color: var(--text);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.component li {
+    margin-right: 10px;
+    background: var(--background);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
 .projects-img{
     width: 100%;
     border-radius: 10px;
@@ -627,8 +644,8 @@ header.sticky .nav-bar{
 
  .scroll-up{
     position: fixed;
-    right: 0.5%;
-    bottom: 3%;
+    right: 20px;
+    bottom: 20px;
     cursor: pointer;
  }
 
